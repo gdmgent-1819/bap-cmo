@@ -1,6 +1,6 @@
 ---
 layout   : course
-permalink: jekyll/tipsandtricks
+permalink: jekyll/classes
 published: true
 #
 title: Code - Classes toevoegen in Markdown
