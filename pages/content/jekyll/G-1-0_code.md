@@ -1,6 +1,6 @@
 ---
 layout   : course
-permalink: bap/tipsandtricks
+permalink: jekyll/tipsandtricks
 published: true
 #
 title: Code - tips and tricks
@@ -20,10 +20,22 @@ De gemakkelijkst weg is dan om een absolute pad te gebruiken die vanuit de root 
     <a href="{{ '/kleur/pantone.html' | relative_url }}">
 {% endraw %}{% endhighlight %}{:data-file="filepath.html"}
 
+*Andere optie*
+{% highlight html linenos %}{% raw %}
+    <img src="{{ site.baseurl }}/images/logo/logo.png">
+    <a href="{{ site.baseurl }}/kleur/pantone.html">
+{% endraw %}{% endhighlight %}{:data-file="filepath.html"}
+
+
 **In Markdown**
 {% highlight md linenos %}{% raw %}
     ![mijn afbeelding alt-txt]({{ '/images/logo/logo.png' | relative_url }})
     [mijn link naar een pagina]({{ '/kleur/pantone.html' | relative_url }})
+{% endraw %}{% endhighlight %}{:data-file="filepath.html"}
+
+*Andere optie*
+{% highlight md linenos %}{% raw %}
+    ![figuur 1]({{ site.baseurl }}/images/jekyll_werking_1.png "figuur 1")
 {% endraw %}{% endhighlight %}{:data-file="filepath.html"}
 
 
