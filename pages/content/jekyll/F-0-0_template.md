@@ -1,6 +1,6 @@
 ---
 layout   : course
-permalink: bap/template
+permalink: jekyll/template
 published: true
 #
 title: Template
